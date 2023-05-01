@@ -124,8 +124,8 @@ public class QuickSortMedianaDeTres extends BaseArquivo {
 
 /////// CAMPO LENGTH /////
     public static void medioCaso() {
-        String arquivoDeEntrdada = "Arquivos-Base//passwords_formated_data.csv"; 
-        String arquivoMedioCaso = "Arquivos//passwords_length_quickSortMedianaDeTres_medioCaso.csv"; 
+        String arquivoDeEntrdada = "Leda-Projeto//Arquivos-Base//passwords_formated_data.csv"; 
+        String arquivoMedioCaso = "Leda-Projeto//Arquivos//passwords_length_quickSortMedianaDeTres_medioCaso.csv"; 
 
         String[][] data = readCSV(arquivoDeEntrdada);
         if (data != null) {
@@ -136,8 +136,8 @@ public class QuickSortMedianaDeTres extends BaseArquivo {
         }
     }
     public static void melhorCaso() {
-        String arquivoMedioCaso = "Arquivos//passwords_length_quickSortMedianaDeTres_medioCaso.csv"; 
-        String arquivoMelhorCaso = "Arquivos//passwords_length_quickSortMedianaDeTres_melhorCaso.csv";
+        String arquivoMedioCaso = "Leda-Projeto//Arquivos//passwords_length_quickSortMedianaDeTres_medioCaso.csv"; 
+        String arquivoMelhorCaso = "Leda-Projeto//Arquivos//passwords_length_quickSortMedianaDeTres_melhorCaso.csv";
 
         String[][] data = readCSV(arquivoMedioCaso);
         if (data != null) {
@@ -148,8 +148,8 @@ public class QuickSortMedianaDeTres extends BaseArquivo {
         }
     }
     public static void piorCaso() {
-        String arquivoDeEntrdadaPiorCaso = "Arquivos-Base//passwords_formated_data_crescente.csv"; 
-        String arquivoPiorCaso = "Arquivos//passwords_length_quickSortMedianaDeTres_piorCaso.csv"; 
+        String arquivoDeEntrdadaPiorCaso = "Leda-Projeto//Arquivos-Base//passwords_formated_data_crescente.csv"; 
+        String arquivoPiorCaso = "Leda-Projeto//Arquivos//passwords_length_quickSortMedianaDeTres_piorCaso.csv"; 
         
 
         String[][] data = readCSV(arquivoDeEntrdadaPiorCaso);
@@ -163,30 +163,30 @@ public class QuickSortMedianaDeTres extends BaseArquivo {
     //////CAMPO MÊS ///////
     public static void medioCasoMes() {
         
-        String filePath = "Arquivos-Base//passwords_formated_data.csv";
+        String filePath = "Leda-Projeto//Arquivos-Base//passwords_formated_data.csv";
         String[][] data = readCSV(filePath);
         quickSortMes(data, 0, data.length - 1);
 
-        String outputFileName = "Arquivos//passwords_data_month_quickSortMedianaDeTres_medioCaso.csv";
+        String outputFileName = "Leda-Projeto//Arquivos//passwords_data_month_quickSortMedianaDeTres_medioCaso.csv";
         writeCSV(data, outputFileName);
     }
 
     public static void melhorCasoMes() {
     
-        String filePath = "Arquivos//passwords_data_month_quickSortMedianaDeTres_medioCaso.csv";
+        String filePath = "Leda-Projeto//Arquivos//passwords_data_month_quickSortMedianaDeTres_medioCaso.csv";
         String[][] data = readCSV(filePath);
         quickSortMes(data, 0, data.length - 1);
 
-        String outputFileName = "Arquivos//passwords_data_month_quickSortMedianaDeTres_melhorCaso.csv";
+        String outputFileName = "Leda-Projeto//Arquivos//passwords_data_month_quickSortMedianaDeTres_melhorCaso.csv";
         writeCSV(data, outputFileName);
     }
     public static void piorCasoMes() {
     
-        String filePath = "Arquivos-Base//passwords_formated_data_month_decrescente.csv";
+        String filePath = "Leda-Projeto//Arquivos-Base//passwords_formated_data_month_decrescente.csv";
         String[][] data = readCSV(filePath);
         quickSortMes(data, 0, data.length - 1);
 
-        String outputFileName = "Arquivos//passwords_data_month_quickSortMedianaDeTres_piorCaso.csv";
+        String outputFileName = "Leda-Projeto//Arquivos//passwords_data_month_quickSortMedianaDeTres_piorCaso.csv";
         writeCSV(data, outputFileName);
     }
 
