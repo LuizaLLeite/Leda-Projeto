@@ -109,8 +109,8 @@ public static void mergeSortMes(String[][] dados, int esquerda, int direita) {
 
 ////// CAMPO LENGTH //////
 public static void medioCaso() {
-    String arquivoDeEntrada = "Arquivos-Base//passwords_formated_data.csv"; 
-    String arquivoMedioCaso = "Arquivos//passwords_length_mergeSort_medioCaso.csv"; 
+    String arquivoDeEntrada = "Leda-Projeto//Arquivos-Base//passwords_formated_data.csv"; 
+    String arquivoMedioCaso = "Leda-Projeto//Arquivos//passwords_length_mergeSort_medioCaso.csv"; 
     
     String[][] data = readCSV(arquivoDeEntrada);
     if (data != null) {
@@ -121,8 +121,8 @@ public static void medioCaso() {
     }
 }
 public static void melhorCaso() {
-    String arquivoMedioCaso = "Arquivos//passwords_length_mergeSort_medioCaso.csv"; 
-    String arquivoMelhorCaso = "Arquivos//passwords_length_mergeSort_melhorCaso.csv";
+    String arquivoMedioCaso = "Leda-Projeto//Arquivos//passwords_length_mergeSort_medioCaso.csv"; 
+    String arquivoMelhorCaso = "Leda-Projeto//Arquivos//passwords_length_mergeSort_melhorCaso.csv";
 
     String[][] data = readCSV(arquivoMedioCaso);
     if (data != null) {
@@ -134,8 +134,8 @@ public static void melhorCaso() {
     
 }
 public static void piorCaso() {
-    String arquivoPiorCaso = "Arquivos//passwords_length_mergeSort_piorCaso.csv";
-    String arquivoDeEntradaPiorCaso = "Arquivos-Base//passwords_formated_data_crescente.csv";
+    String arquivoPiorCaso = "Leda-Projeto//Arquivos//passwords_length_mergeSort_piorCaso.csv";
+    String arquivoDeEntradaPiorCaso = "Leda-Projeto//Arquivos-Base//passwords_formated_data_crescente.csv";
 
     String[][] data = readCSV(arquivoDeEntradaPiorCaso);
     if (data != null) {
@@ -149,31 +149,31 @@ public static void piorCaso() {
     //////CAMPO MÊS////////
     public static void medioCasoMes() {
         
-        String arquivoDeEntrada = "Arquivos-Base//passwords_formated_data.csv";
+        String arquivoDeEntrada = "Leda-Projeto//Arquivos-Base//passwords_formated_data.csv";
         String[][] data = readCSV(arquivoDeEntrada);
         mergeSortMes(data, 0, data.length - 1);
 
-        String arquivoDeSaida = "Arquivos//passwords_data_month_mergeSort_medioCaso.csv";
+        String arquivoDeSaida = "Leda-Projeto//Arquivos//passwords_data_month_mergeSort_medioCaso.csv";
         writeCSV(data, arquivoDeSaida);
     }
 
     public static void melhorCasoMes() {
         
-        String arquivoDeEntrada = "Arquivos//passwords_data_month_mergeSort_medioCaso.csv";
+        String arquivoDeEntrada = "Leda-Projeto//Arquivos//passwords_data_month_mergeSort_medioCaso.csv";
         String[][] data = readCSV(arquivoDeEntrada);
         mergeSortMes(data, 0, data.length - 1);
 
-        String arquivoDeSaida = "Arquivos//passwords_data_month_mergeSort_melhorCaso.csv";
+        String arquivoDeSaida = "Leda-Projeto//Arquivos//passwords_data_month_mergeSort_melhorCaso.csv";
         writeCSV(data, arquivoDeSaida);
     }
 
     public static void piorCasoMes() {
 
-        String arquivoDeEntrada = "Arquivos-Base//passwords_formated_data_month_decrescente.csv";
+        String arquivoDeEntrada = "Leda-Projeto//Arquivos-Base//passwords_formated_data_month_decrescente.csv";
         String[][] data = readCSV(arquivoDeEntrada);
         mergeSortMes(data, 0, data.length - 1);
 
-        String arquivoDeSaida = "Arquivos//passwords_data_month_mergeSort_piorCaso.csv";
+        String arquivoDeSaida = "Leda-Projeto//Arquivos//passwords_data_month_mergeSort_piorCaso.csv";
         writeCSV(data, arquivoDeSaida);
     }
 
