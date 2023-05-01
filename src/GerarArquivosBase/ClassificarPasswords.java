@@ -9,8 +9,8 @@ import java.io.IOException;
 public class ClassificarPasswords {
 
     public static void classificarArquivo() {
-        String caminhoArquivoOriginal = "Arquivos-Base//passwords.csv";
-        String caminhoArquivoClassificado = "Arquivos-Base//password_classifier.csv";
+        String caminhoArquivoOriginal = "Leda-Projeto//Arquivos-Base//passwords.csv";
+        String caminhoArquivoClassificado = "Leda-Projeto//Arquivos-Base//password_classifier.csv";
         
         try (BufferedReader lerArquivo = new BufferedReader(new FileReader(caminhoArquivoOriginal));
              BufferedWriter escreverArquivo = new BufferedWriter(new FileWriter(caminhoArquivoClassificado))) {

@@ -9,8 +9,8 @@ import java.io.IOException;
 public class FiltrarSenhas {
 
     public static void filtrarArquivo(){
-        String caminhoArquivoOriginal = "Arquivos-Base//password_classifier.csv";
-        String caminhoArquivoFiltrado = "Arquivos-Base//passwords_classifier.csv";
+        String caminhoArquivoOriginal = "Leda-Projeto//Arquivos-Base//password_classifier.csv";
+        String caminhoArquivoFiltrado = "Leda-Projeto//Arquivos-Base//passwords_classifier.csv";
         String[] senhasBoas = {"Boa", "Muito Boa"};
         
         try (BufferedReader lerArquivo = new BufferedReader(new FileReader(caminhoArquivoOriginal));

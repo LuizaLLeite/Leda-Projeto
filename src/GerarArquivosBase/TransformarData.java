@@ -15,9 +15,9 @@ public class TransformarData {
         SimpleDateFormat dataInicial = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         SimpleDateFormat dataAtualizada = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
 
-        String caminhoArquivoOriginal = "Arquivos-Base//password_classifier.csv";
+        String caminhoArquivoOriginal = "Leda-Projeto//Arquivos-Base//password_classifier.csv";
         File arquivoOriginal = new File(caminhoArquivoOriginal);
-        String caminhoArquivoFormatado = "Arquivos-Base//passwords_formated_data.csv";
+        String caminhoArquivoFormatado = "Leda-Projeto//Arquivos-Base//passwords_formated_data.csv";
 
         try (BufferedReader lerArquivo = new BufferedReader(new FileReader(arquivoOriginal))) {
             String primeiraLinha = lerArquivo.readLine();

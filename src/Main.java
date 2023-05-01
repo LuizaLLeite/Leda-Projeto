@@ -21,7 +21,7 @@ public class Main {
 
       // O primeiro arquivo que tem que ser gerado é o "password_classifier.csv"
       ClassificarPasswords cl = new ClassificarPasswords();
-      //cl.classificarArquivo();
+      cl.classificarArquivo();
 
       // O segundo arquivo é o "password_formated_data.csv"
       TransformarData tr = new TransformarData();
@@ -47,7 +47,7 @@ public class Main {
     // ORDENAR PELO CAMPO MÊS 
         //  s.medioCasoMes();
         // s.melhorCasoMes();
-          s.piorCasoMes();
+        // s.piorCasoMes();
 
 
      /////////////////////////INSERTION SORT//////////////////////////////////////
