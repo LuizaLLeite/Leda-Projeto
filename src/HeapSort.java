@@ -99,8 +99,8 @@ public static void heapSortMes(String[][] dados) {
 }
    //////CAMPO LENTH //////
    public static void medioCaso() {
-    String arquivoDeEntrada = "Arquivos-Base//passwords_formated_data.csv"; // Caminho do arquivo de entrada
-    String arquivoMedioCaso = "Arquivos//passwords_length_heapSort_medioCaso.csv"; // Caminho do arquivo de saída
+    String arquivoDeEntrada = "Leda-Projeto//Arquivos-Base//passwords_formated_data.csv"; // Caminho do arquivo de entrada
+    String arquivoMedioCaso = "Leda-Projeto//Arquivos//passwords_length_heapSort_medioCaso.csv"; // Caminho do arquivo de saída
     
     String[][] data = readCSV(arquivoDeEntrada);
     if (data != null) {
@@ -111,8 +111,8 @@ public static void heapSortMes(String[][] dados) {
     }
 }
 public static void melhorCaso() {
-    String arquivoMedioCaso = "Arquivos//passwords_length_heapSort_medioCaso.csv"; // Caminho do arquivo de saída
-    String arquivoMelhorCaso = "Arquivos//passwords_length_heapSort_melhorCaso.csv";
+    String arquivoMedioCaso = "Leda-Projeto//Arquivos//passwords_length_heapSort_medioCaso.csv"; // Caminho do arquivo de saída
+    String arquivoMelhorCaso = "Leda-Projeto//Arquivos//passwords_length_heapSort_melhorCaso.csv";
 
     String[][] data = readCSV(arquivoMedioCaso);
     if (data != null) {
@@ -124,8 +124,8 @@ public static void melhorCaso() {
     
 }
 public static void piorCaso() {
-    String arquivoPiorCaso = "Arquivos//passwords_length_heapSort_piorCaso.csv";
-    String arquivoDeEntrdaPiorCaso = "Arquivos-Base//passwords_formated_data_crescente.csv";
+    String arquivoPiorCaso = "Leda-Projeto//Arquivos//passwords_length_heapSort_piorCaso.csv";
+    String arquivoDeEntrdaPiorCaso = "Leda-Projeto//Arquivos-Base//passwords_formated_data_crescente.csv";
 
     String[][] data = readCSV(arquivoDeEntrdaPiorCaso);
     if (data != null) {
@@ -138,29 +138,29 @@ public static void piorCaso() {
 }
 ////// CAMPO MÊS //////
     public static void medioCasoMes() {
-        String arquivoDeEntrada = "Arquivos-Base//passwords_formated_data.csv";
+        String arquivoDeEntrada = "Leda-Projeto//Arquivos-Base//passwords_formated_data.csv";
         String[][] data = readCSV(arquivoDeEntrada);
 
         heapSortMes(data);
-        String arquivoDeSaida = "Arquivos//passwords_data_month_heapSort_medioCaso.csv";
+        String arquivoDeSaida = "Leda-Projeto//Arquivos//passwords_data_month_heapSort_medioCaso.csv";
         writeCSV(data, arquivoDeSaida);
     }
 
     public static void melhorCasoMes() {
-        String arquivoDeEntrada = "Arquivos//passwords_data_month_heapSort_medioCaso.csv";
+        String arquivoDeEntrada = "Leda-Projeto//Arquivos//passwords_data_month_heapSort_medioCaso.csv";
         String[][] data = readCSV(arquivoDeEntrada);
 
         heapSortMes(data);
-        String arquivoDeSaida = "Arquivos//passwords_data_month_heapSort_melhorCaso.csv";
+        String arquivoDeSaida = "Leda-Projeto//Arquivos//passwords_data_month_heapSort_melhorCaso.csv";
         writeCSV(data, arquivoDeSaida);
     }
 
     public static void piorCasoMes() {
-        String arquivoDeEntrada = "Arquivos-Base//passwords_formated_data_month_decrescente.csv";
+        String arquivoDeEntrada = "Leda-Projeto//Arquivos-Base//passwords_formated_data_month_decrescente.csv";
         String[][] data = readCSV(arquivoDeEntrada);
 
         heapSortMes(data);
-        String arquivoDeSaida = "Arquivos//passwords_data_month_heapSort_piorCaso.csv";
+        String arquivoDeSaida = "Leda-Projeto//Arquivos//passwords_data_month_heapSort_piorCaso.csv";
         writeCSV(data, arquivoDeSaida);
     }
     
